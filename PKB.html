@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leung Atelier</title>
+  <link rel="icon" type="image/png" href="images/favicon liang.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="nav-wrapper">
+      <nav class="navbar">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#services">Services</a>
+      </nav>
+      <div class="nav-line"></div>   
+    </div>
+    <div class="hero-center">
+      <div class="hero-left">
+        <h1 class="firm-name-first">
+          <span class="firm-name-first">Leung</span>
+          <span class="firm-name-second">Atelier</span>
+        </h1>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-right">
+        <p class="quote-zh">最简单的往往是最美的</p>
+        <p class="quote-en">"The simplest is often the most beautiful"</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="about" class="about-section">
+      <div class="about-photo-side">
+        <div class="about-photo-wrapper">
+          <img src="images/Cafe.png" alt="Partners and Co" class="about-photo">
+          <div class="about-photo-overlay">
+            <p class="overlay-name">Partners & Co</p>
+            <p class="overlay-type">Commercial · Café & Office</p>
+            <p class="overlay-year">2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-text-side">
+        <p class="about-label">ABOUT</p>
+        <h2 class="about-title">Leung Atelier</h2>
+        <p class="about-desc-en">Leung Atelier is a Jakarta-based architectural practice founded in 2022 by a young architect with a singular vision: that the most powerful spaces are the ones that feel inevitable. Clean, intentional, and deeply human.</p>
+        <p class="about-desc-id">Leung Atelier adalah studio arsitektur berbasis di Jakarta yang didirikan pada 2022, dengan visi bahwa ruang terbaik adalah ruang yang terasa alami, bersih, penuh tujuan, dan manusiawi.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Years</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">JKT</span>
+            <span class="stat-label">Based</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Vision</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="projects-header">
+        <p class="projects-label">OUR WORK</p>
+        <h2 class="projects-title">Projects</h2>
+      </div>
+      <div class="projects-track" id="projectsTrack">
+        <div class="project-card">
+          <div class="project-placeholder"></div>
+          <div class="project-info">
+            <p class="project-name">Project 01</p>
+            <p class="project-type">Residential</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-placeholder"></div>
+          <div class="project-info">
+            <p class="project-name">Project 02</p>
+            <p class="project-type">Commercial</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-placeholder"></div>
+          <div class="project-info">
+            <p class="project-name">Project 03</p>
+            <p class="project-type">Interior</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-placeholder"></div>
+          <div class="project-info">
+            <p class="project-name">Project 04</p>
+            <p class="project-type">Residential</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-placeholder"></div>
+          <div class="project-info">
+            <p class="project-name">Project 05</p>
+            <p class="project-type">Commercial</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-placeholder"></div>
+          <div class="project-info">
+            <p class="project-name">Project 06</p>
+            <p class="project-type">Interior</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <p class="services-label">WHAT WE DO</p>
+      <h2 class="services-title">Services</h2>
+      <div class="services-list">
+        <div class="service-item" onclick="toggleService(this)">
+          <span class="service-number">01</span>
+          <div class="service-names">
+            <p class="service-id">Sketsa Denah</p>
+            <p class="service-en">Floor Plan Sketches</p>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+        <div class="service-content">
+          <img src="images/denah.jpeg" alt="Sketsa Denah">
+        </div>
+
+        <div class="service-item">
+          <span class="service-number">02</span>
+          <div class="service-names">
+            <p class="service-id">Tampak & Potongan</p>
+            <p class="service-en">Elevations & Sections</p>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+
+        <div class="service-item">
+          <span class="service-number">03</span>
+          <div class="service-names">
+            <p class="service-id">Gambar Kerja Lapangan</p>
+            <p class="service-en">Construction Drawings</p>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+
+        <div class="service-item" onclick="toggleService(this)">
+          <span class="service-number">04</span>
+          <div class="service-names">
+            <p class="service-id">3D Visualisasi</p>
+            <p class="service-en">3D Visualization</p>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+        <div class="service-content">
+          <img src="images/interior_upscayl_4x_upscayl-standard-4x.png" alt="3D Visualisasi">
+        </div>
+
+        <div class="service-item">
+          <span class="service-number">05</span>
+          <div class="service-names">
+            <p class="service-id">Rendering</p>
+            <p class="service-en">Rendering</p>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <img src="images/A_part_of_Giant_Traditional_Chinese_Painting.jpg" class="contact-painting" alt="Chinese Painting">
+      <div class="contact-container">
+        <p class="contact-label">GET IN TOUCH</p>
+        <h2 class="contact-title">Let's Build Something<br>Beautiful Together</h2>
+        <div class="contact-line"></div>
+        <div class="contact-links">
+          <a href="https://wa.me/6285103799919" target="_blank" class="contact-item">
+            <span class="contact-type">WhatsApp</span>
+            <span class="contact-value">+62 851 0379 9919</span>
+          </a>
+          <a href="https://instagram.com/liangatelierr" target="_blank" class="contact-item">
+            <span class="contact-type">Instagram</span>
+            <span class="contact-value">@liangatelierr</span>
+          </a>
+          <a href="mailto:liangatelierr@gmail.com" target="_blank" class="contact-item">
+            <span class="contact-type">Email</span>
+            <span class="contact-value">liangatelierr@gmail.com</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-type">Based</span>
+            <span class="contact-value">Jakarta, Indonesia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="closing-section">
+    <p class="closing-quote">“As an architect you design for the present, with an awareness of the past, for a future which is essentially unknown.”</p>
+    <p class="closing-author"> – Norman Foster</p> </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-name">Leung Atelier</p>
+      <p class="footer-copy">© 2024 Leung Atelier. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const track = document.getElementById('projectsTrack');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    track.addEventListener('mousedown', (e) => {
+      isDown = true;
+      track.classList.add('dragging');
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+
+    track.addEventListener('mouseleave', () => {
+      isDown = false;
+      track.classList.remove('dragging');
+    });
+
+    track.addEventListener('mouseup', () => {
+      isDown = false;
+      track.classList.remove('dragging');
+    });
+
+    track.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 2;
+      track.scrollLeft = scrollLeft - walk;
+    });
+
+    function toggleService(item) {
+      const content = item.nextElementSibling;
+      item.classList.toggle('active');
+      content.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
